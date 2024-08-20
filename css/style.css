@@ -1,0 +1,337 @@
+/* Estilos generales */
+:root {
+    --amarillo: rgb(255, 204, 0);
+    --negro: rgb(0, 0, 0);
+    --azul-cielo: rgb(135, 206, 235);
+    --blanco: rgb(255, 255, 255);
+    --naranja: rgb(255, 165, 0);
+    --vino-tinto: rgb(128, 0, 32);
+    --gris-claro: rgb(245, 245, 245);
+    --azul-oscuro: rgb(0, 51, 102);
+}
+
+body {
+    font-family: 'Times New Roman', sans-serif;
+    line-height: 1.6;
+    color: var(--negro);
+    background-color: var(--negro);
+    margin: 0;
+    padding: 0;
+    /* Aumento general del tamaño de fuente en 2 puntos */
+    font-size: 18px; /* Ajusta este valor según sea necesario */
+    scroll-behavior: smooth;
+
+}
+
+/* Comentario: Para ajustar el tamaño de fuente manualmente, modifica el valor de font-size arriba */
+
+.container {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+
+/* Header */
+header {
+    background-color: var(--negro);
+    color: var(--amarillo);
+    padding: 100px 0;
+}
+
+.intro-text {
+    text-align: center;
+}
+
+.intro-lead-in {
+    font-size: 24px; /* Aumentado en 2 puntos */
+    font-style: italic;
+    line-height: 24px;
+    margin-bottom: 25px;
+}
+
+.intro-heading {
+    font-size: 52px; /* Aumentado en 2 puntos */
+    font-weight: 700;
+    line-height: 52px;
+    margin-bottom: 25px;
+}
+
+/* Navegación */
+.navbar-default {
+    background-color: var(--negro);
+    border-color: transparent;
+    transition: all 0.3s ease-in-out;
+    padding: 15px 0;
+}
+
+.navbar-default .navbar-brand {
+    padding: 0;
+    height: auto;
+}
+
+.navbar-logo {
+    max-height: 50%;
+    width: auto;
+    max-width: 100%;
+    object-fit: contain;
+}
+
+.navbar-default .navbar-nav > li > a {
+    color: var(--negro);
+    font-weight: 600;
+    font-size: 16px; /* Aumentado en 2 puntos */
+    padding: 20px 15px;
+    transition: all 0.3s ease-in-out;
+    animation: glow 3s ease-in-out infinite;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+    color: var(--amarillo);
+}
+
+.navbar-toggle {
+    margin-top: 15px;
+}
+
+/* Secciones */
+section {
+    padding: 100px 0;
+}
+
+section h2.section-heading {
+    font-size: 42px; /* Aumentado en 2 puntos */
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+section h3.section-subheading {
+    font-size: 18px; /* Aumentado en 2 puntos */
+    font-weight: 400;
+    font-style: italic;
+    margin-bottom: 75px;
+}
+
+/* Sección Sobre Nosotros */
+#about {
+    background-color: var(--gris-claro);
+}
+
+.circle-image {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 auto 20px;
+}
+
+.circle-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Sección Características de la Plataforma */
+#features {
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+.feature-item {
+    margin-bottom: 50px;
+}
+
+.feature-item h4 {
+    color: var(--amarillo);
+    margin-bottom: 20px;
+}
+
+.feature-item .img-responsive {
+    margin-bottom: 20px;
+}
+
+.feature-image {
+    width: 200px;
+    height: 200px;
+    margin: 0 auto 20px;
+}
+
+/* Sección Nuestros Logros */
+#achievements {
+    background-color: var(--blanco);
+}
+
+.achievement-item {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.achievement-poster {
+    max-height: 600px;
+    margin: 0 auto;
+}
+
+/* Sección Expansión Internacional */
+#expansion {
+    background-color: var(--gris-claro);
+}
+
+.expansion-image {
+    /* Efecto de sombra en la parte inferior */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.expansion-text {
+    font-size: 23px; /* Aumentado en 5 puntos */
+}
+
+/* Sección Inversión y Futuro */
+#investment {
+    background-color: var(--blanco);
+}
+
+/* Sección Descarga nuestra app */
+#download {
+    background-color: var(--gris-claro);
+}
+
+.app-buttons {
+    margin-top: 30px;
+}
+
+.btn-app-store, .btn-google-play {
+    display: inline-block;
+    margin: 10px;
+    text-decoration: none;
+}
+
+.btn-app-store img, .btn-google-play img {
+    height: 90px;
+    width: auto;
+}
+
+/* Footer */
+footer {
+    padding: 10px 0;
+    text-align: center;
+    background-color: var(--negro);
+    color: var(--blanco);
+}
+
+footer span.copyright {
+    line-height: 40px;
+    text-transform: uppercase;
+    font-size: 16px; /* Aumentado en 2 puntos */
+}
+
+footer ul.quicklinks {
+    margin-bottom: 0;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-size: 16px; /* Aumentado en 2 puntos */
+}
+
+ul.social-buttons {
+    margin-bottom: 0;
+}
+
+ul.social-buttons li a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--azul-oscuro);
+    height: 40px;
+    width: 40px;
+    border-radius: 100%;
+    font-size: 22px; /* Aumentado en 2 puntos */
+    line-height: 40px;
+    color: var(--blanco);
+    outline: none;
+    transition: all 0.3s;
+}
+
+ul.social-buttons li a:hover,
+ul.social-buttons li a:focus,
+ul.social-buttons li a:active {
+    background-color: var(--naranja);
+}
+
+ul.social-buttons li a img.social-icon {
+    max-width: 60%;
+    max-height: 60%;
+    object-fit: contain;
+}
+
+/* Animación para el cambio de tamaño al hacer scroll */
+.navbar-shrink {
+    padding: 5px 0;
+}
+
+.navbar-shrink .navbar-logo {
+    max-height: 40px;
+}
+
+.navbar-shrink .navbar-nav > li > a {
+    padding: 15px 15px;
+}
+
+@keyframes glow {
+    0% {
+      text-shadow: 0 0 5px rgba(255, 215, 0, 0.5), 0 0 10px rgba(255, 215, 0, 0.3);
+    }
+    50% {
+      text-shadow: 0 0 10px rgba(255, 215, 0, 0.8), 0 0 20px rgba(255, 215, 0, 0.5), 0 0 30px rgba(255, 215, 0, 0.3);
+    }
+    100% {
+      text-shadow: 0 0 5px rgba(255, 215, 0, 0.5), 0 0 10px rgba(255, 215, 0, 0.3);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .intro-text {
+        padding-top: 100px;
+        padding-bottom: 50px;
+    }
+
+    .intro-lead-in {
+        font-size: 20px; /* Aumentado en 2 puntos */
+        line-height: 20px;
+        margin-bottom: 25px;
+    }
+
+    .intro-heading {
+        font-size: 42px; /* Aumentado en 2 puntos */
+        font-weight: 700;
+        line-height: 42px;
+        margin-bottom: 25px;
+    }
+
+    section {
+        padding: 75px 0;
+    }
+
+    section h2.section-heading {
+        font-size: 32px; /* Aumentado en 2 puntos */
+    }
+
+    .navbar-default {
+        padding: 10px 0;
+    }
+
+    .navbar-logo {
+        max-height: 40px;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        padding: 10px 15px;
+    }
+
+    .feature-item .col-md-6 {
+        text-align: center;
+    }
+}
